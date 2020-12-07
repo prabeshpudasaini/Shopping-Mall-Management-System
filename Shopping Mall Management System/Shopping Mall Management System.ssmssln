@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# SQL Server Management Studio Solution File, Format Version 18.00
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Shopping Mall Management System", "Shopping Mall Management System\Shopping Mall Management System.ssmssqlproj", "{0450887D-EEC4-49F3-B789-01E988BA4C3E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0450887D-EEC4-49F3-B789-01E988BA4C3E}.Default|Default.ActiveCfg = Default
+		{20D21507-3B50-4363-975C-03F23E501BF1}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C56272D5-A02C-4BE5-80E0-F49FA95A19D0}
+	EndGlobalSection
+EndGlobal
