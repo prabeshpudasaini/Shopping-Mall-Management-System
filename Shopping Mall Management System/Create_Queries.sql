@@ -48,4 +48,5 @@ create table Payment(
 Payment_Id int primary key,
 Payment_Type varchar(100),
 Amount money,
+
 );
