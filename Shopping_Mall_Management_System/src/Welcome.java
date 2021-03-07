@@ -103,6 +103,8 @@ public class Welcome extends javax.swing.JFrame {
 
     private void shop_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_shop_buttonActionPerformed
         // TODO add your handling code here:
+        setVisible(false);
+        new Purchase_product().setVisible(true);
     }//GEN-LAST:event_shop_buttonActionPerformed
 
     private void login_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_login_buttonActionPerformed
