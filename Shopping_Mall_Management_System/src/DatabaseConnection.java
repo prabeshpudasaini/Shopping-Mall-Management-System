@@ -21,7 +21,7 @@ public class DatabaseConnection {
         try 
         {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            String db = "jdbc:sqlserver://DESKTOP-KN2KITT;databaseName=Ecommerce;user=sa;password=prabesh";
+            String db = "jdbc:sqlserver://DESKTOP-KN2KITT;databaseName=Shopping_Mall;user=sa;password=prabesh";
             Connection con = DriverManager.getConnection(db);
             return con;
             
