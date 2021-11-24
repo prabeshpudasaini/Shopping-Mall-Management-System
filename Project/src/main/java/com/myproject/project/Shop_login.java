@@ -72,7 +72,7 @@ public class Shop_login extends javax.swing.JFrame {
         jLabel3.setText("Password:");
 
         Shop_Login_button.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        Shop_Login_button.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project\\src\\main\\java\\img\\login_icon.png")); // NOI18N
+        Shop_Login_button.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project-I\\Project\\src\\main\\java\\img\\login_icon.png")); // NOI18N
         Shop_Login_button.setText("Login");
         Shop_Login_button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -81,7 +81,7 @@ public class Shop_login extends javax.swing.JFrame {
         });
 
         back_button.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        back_button.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project\\src\\main\\java\\img\\back-button.png")); // NOI18N
+        back_button.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project-I\\Project\\src\\main\\java\\img\\back-button.png")); // NOI18N
         back_button.setText("Back");
         back_button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -144,7 +144,7 @@ public class Shop_login extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 28)); // NOI18N
         jLabel1.setText("Shop Login");
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project\\src\\main\\java\\img\\login.png")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project-I\\Project\\src\\main\\java\\img\\login.png")); // NOI18N
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);

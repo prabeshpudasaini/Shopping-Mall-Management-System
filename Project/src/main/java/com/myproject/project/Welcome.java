@@ -47,6 +47,7 @@ public class Welcome extends javax.swing.JFrame {
         jLabel4.setText("WELCOME TO SHOPPING MALL MANAGEMENT SYSTEM");
 
         login_button.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        login_button.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project-I\\Project\\src\\main\\java\\img\\login_icon.png")); // NOI18N
         login_button.setText("LOGIN");
         login_button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -55,6 +56,7 @@ public class Welcome extends javax.swing.JFrame {
         });
 
         shop_button.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        shop_button.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project-I\\Project\\src\\main\\java\\img\\cart.png")); // NOI18N
         shop_button.setText("Start Shopping");
         shop_button.setMaximumSize(new java.awt.Dimension(0, 0));
         shop_button.addActionListener(new java.awt.event.ActionListener() {
@@ -82,7 +84,7 @@ public class Welcome extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(173, 173, 173)
-                .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
+                .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(59, 59, 59)
                 .addComponent(shop_button, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(53, 53, 53)
@@ -152,6 +154,7 @@ public class Welcome extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
+                
                 new Welcome().setVisible(true);
             }
         });

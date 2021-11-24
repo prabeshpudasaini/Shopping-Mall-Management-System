@@ -67,7 +67,7 @@ public class Login extends javax.swing.JFrame {
         jLabel3.setText("Password:");
 
         Shop_Login_button.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        Shop_Login_button.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project\\src\\main\\java\\img\\login_icon.png")); // NOI18N
+        Shop_Login_button.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project-I\\Project\\src\\main\\java\\img\\login_icon.png")); // NOI18N
         Shop_Login_button.setText("Login");
         Shop_Login_button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -76,7 +76,7 @@ public class Login extends javax.swing.JFrame {
         });
 
         back_button.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        back_button.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project\\src\\main\\java\\img\\back-button.png")); // NOI18N
+        back_button.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project-I\\Project\\src\\main\\java\\img\\back-button.png")); // NOI18N
         back_button.setText("Back");
         back_button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -112,7 +112,7 @@ public class Login extends javax.swing.JFrame {
                             .addComponent(back_button))
                         .addComponent(shop_password_PasswordField, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(shop_username_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(172, Short.MAX_VALUE))
+                .addContainerGap(129, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -139,7 +139,7 @@ public class Login extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 28)); // NOI18N
         jLabel1.setText("Login");
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project\\src\\main\\java\\img\\login.png")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project-I\\Project\\src\\main\\java\\img\\login.png")); // NOI18N
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -161,7 +161,7 @@ public class Login extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addGap(58, 58, 58)
                 .addComponent(jLabel4)
-                .addContainerGap(315, Short.MAX_VALUE))
+                .addContainerGap(155, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);

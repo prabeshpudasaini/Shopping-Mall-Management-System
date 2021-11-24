@@ -62,7 +62,6 @@ public class Register extends javax.swing.JFrame {
         Shop_Username_TextField = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
         Shop_Password_TextField = new javax.swing.JTextField();
-        Back_jButton = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
@@ -70,6 +69,8 @@ public class Register extends javax.swing.JFrame {
         Register_Shop_jLabel = new javax.swing.JLabel();
         Logout_jPanel = new javax.swing.JPanel();
         Logout_jLabel = new javax.swing.JLabel();
+        jPanel5 = new javax.swing.JPanel();
+        Report_jLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -88,7 +89,7 @@ public class Register extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel5.setText("Shop Name:");
 
-        Delete_Shop_Button.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project\\src\\main\\java\\img\\delete-user.png")); // NOI18N
+        Delete_Shop_Button.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project-I\\Project\\src\\main\\java\\img\\delete-user.png")); // NOI18N
         Delete_Shop_Button.setText("Delete");
         Delete_Shop_Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -96,7 +97,7 @@ public class Register extends javax.swing.JFrame {
             }
         });
 
-        Edit_Shop_Button.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project\\src\\main\\java\\img\\edit-user.png")); // NOI18N
+        Edit_Shop_Button.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project-I\\Project\\src\\main\\java\\img\\edit-user.png")); // NOI18N
         Edit_Shop_Button.setText("Edit");
         Edit_Shop_Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -104,7 +105,7 @@ public class Register extends javax.swing.JFrame {
             }
         });
 
-        Clear_Button.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project\\src\\main\\java\\img\\clear.png")); // NOI18N
+        Clear_Button.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project-I\\Project\\src\\main\\java\\img\\clear.png")); // NOI18N
         Clear_Button.setText("Clear");
         Clear_Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -112,7 +113,7 @@ public class Register extends javax.swing.JFrame {
             }
         });
 
-        Add_Shop_Button.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project\\src\\main\\java\\img\\add-user.png")); // NOI18N
+        Add_Shop_Button.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project-I\\Project\\src\\main\\java\\img\\add-user.png")); // NOI18N
         Add_Shop_Button.setText("Add");
         Add_Shop_Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -152,14 +153,6 @@ public class Register extends javax.swing.JFrame {
         jLabel11.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel11.setText("Password:");
 
-        Back_jButton.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project\\src\\main\\java\\img\\back-button.png")); // NOI18N
-        Back_jButton.setText("Back");
-        Back_jButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Back_jButtonActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -175,32 +168,27 @@ public class Register extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(Add_Shop_Button)
-                                .addGap(50, 50, 50)
-                                .addComponent(Edit_Shop_Button)
-                                .addGap(48, 48, 48)
-                                .addComponent(Delete_Shop_Button))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(Shop_Name_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(Shop_Owner_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Shop_Username_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(jPanel2Layout.createSequentialGroup()
-                                        .addGap(65, 65, 65)
-                                        .addComponent(Clear_Button)))
+                                    .addComponent(Shop_Username_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(90, 90, 90)
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel2Layout.createSequentialGroup()
-                                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jLabel9)
-                                            .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGap(22, 22, 22)
-                                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(Shop_No_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(Shop_Phone_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(Shop_Password_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addComponent(Back_jButton)))))
+                                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel9)
+                                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(Add_Shop_Button)
+                                .addGap(18, 18, 18)
+                                .addComponent(Edit_Shop_Button)
+                                .addGap(38, 38, 38)
+                                .addComponent(Delete_Shop_Button)))
+                        .addGap(22, 22, 22)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Clear_Button)
+                            .addComponent(Shop_No_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Shop_Phone_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Shop_Password_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(32, 32, 32)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 650, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -241,12 +229,9 @@ public class Register extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Add_Shop_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Edit_Shop_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Delete_Shop_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(26, 26, 26)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Clear_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Back_jButton))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 164, Short.MAX_VALUE)
+                    .addComponent(Delete_Shop_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Clear_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -255,7 +240,7 @@ public class Register extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(153, 153, 255));
 
-        jLabel8.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project\\src\\main\\java\\img\\admin.png")); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project-I\\Project\\src\\main\\java\\img\\admin.png")); // NOI18N
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 28)); // NOI18N
         jLabel7.setText("Admin");
@@ -266,14 +251,6 @@ public class Register extends javax.swing.JFrame {
         Register_Shop_jLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Register_Shop_jLabel.setText("Register Shop");
         Register_Shop_jLabel.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        Register_Shop_jLabel.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                Register_Shop_jLabelMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                Register_Shop_jLabelMouseExited(evt);
-            }
-        });
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -288,7 +265,7 @@ public class Register extends javax.swing.JFrame {
 
         Logout_jPanel.setBackground(new java.awt.Color(204, 204, 255));
 
-        Logout_jLabel.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project\\src\\main\\java\\img\\logout.png")); // NOI18N
+        Logout_jLabel.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project-I\\Project\\src\\main\\java\\img\\logout.png")); // NOI18N
         Logout_jLabel.setText("Logout");
         Logout_jLabel.setAlignmentX(0.5F);
         Logout_jLabel.setFocusable(false);
@@ -316,6 +293,41 @@ public class Register extends javax.swing.JFrame {
             .addComponent(Logout_jLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE)
         );
 
+        jPanel5.setBackground(new java.awt.Color(204, 204, 255));
+
+        Report_jLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        Report_jLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Report_jLabel.setText("Report");
+        Report_jLabel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Report_jLabel.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Report_jLabelMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Report_jLabelMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Report_jLabelMouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 242, Short.MAX_VALUE)
+            .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(Report_jLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 242, Short.MAX_VALUE))
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 42, Short.MAX_VALUE)
+            .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel5Layout.createSequentialGroup()
+                    .addComponent(Report_jLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -327,19 +339,22 @@ public class Register extends javax.swing.JFrame {
                         .addGap(35, 35, 35)
                         .addComponent(jLabel8))
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(67, 67, 67)
-                        .addComponent(jLabel7))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(74, 74, 74)
-                        .addComponent(Logout_jPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(Logout_jPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(67, 67, 67)
+                        .addComponent(jLabel7)))
                 .addContainerGap(47, Short.MAX_VALUE))
+            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addGap(44, 44, 44)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 132, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 77, Short.MAX_VALUE)
                 .addComponent(jLabel7)
                 .addGap(36, 36, 36)
                 .addComponent(jLabel8)
@@ -421,7 +436,7 @@ public class Register extends javax.swing.JFrame {
             DisplayShop();
             
         } catch (Exception e) {
-             JOptionPane.showMessageDialog(null, e);
+             JOptionPane.showMessageDialog(null, "Value must be integer");
         }
         }
     }//GEN-LAST:event_Edit_Shop_ButtonActionPerformed
@@ -448,7 +463,7 @@ public class Register extends javax.swing.JFrame {
             DisplayShop();
             
         } catch (Exception e) {
-             JOptionPane.showMessageDialog(null, e);
+             JOptionPane.showMessageDialog(null, "Value must be integer");
         }
         }
     }//GEN-LAST:event_Add_Shop_ButtonActionPerformed
@@ -504,23 +519,6 @@ public class Register extends javax.swing.JFrame {
 
     }//GEN-LAST:event_Shop_TableMouseClicked
 
-    private void Register_Shop_jLabelMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Register_Shop_jLabelMouseEntered
-        // TODO add your handling code here:
-         Register_Shop_jLabel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-    }//GEN-LAST:event_Register_Shop_jLabelMouseEntered
-
-    private void Register_Shop_jLabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Register_Shop_jLabelMouseExited
-        // TODO add your handling code here:
-                Register_Shop_jLabel.setBorder(null);
-
-    }//GEN-LAST:event_Register_Shop_jLabelMouseExited
-
-    private void Back_jButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Back_jButtonActionPerformed
-        // TODO add your handling code here:
-        this.dispose();
-        new Admin_login().setVisible(true);
-    }//GEN-LAST:event_Back_jButtonActionPerformed
-
     private void Logout_jLabelMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Logout_jLabelMouseEntered
         // TODO add your handling code here:
         Logout_jLabel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -536,6 +534,25 @@ public class Register extends javax.swing.JFrame {
         this.dispose();
         new Welcome().setVisible(true);
     }//GEN-LAST:event_Logout_jLabelMouseClicked
+
+    private void Report_jLabelMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Report_jLabelMouseEntered
+        // TODO add your handling code here:
+        Report_jLabel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+
+    }//GEN-LAST:event_Report_jLabelMouseEntered
+
+    private void Report_jLabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Report_jLabelMouseExited
+        // TODO add your handling code here:
+        Report_jLabel.setBorder(null);
+
+    }//GEN-LAST:event_Report_jLabelMouseExited
+
+    private void Report_jLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Report_jLabelMouseClicked
+        // TODO add your handling code here:
+        this.dispose();
+        new Report().setVisible(true);
+    }//GEN-LAST:event_Report_jLabelMouseClicked
 
     /**
      * @param args the command line arguments
@@ -574,13 +591,13 @@ public class Register extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Add_Shop_Button;
-    private javax.swing.JButton Back_jButton;
     private javax.swing.JButton Clear_Button;
     private javax.swing.JButton Delete_Shop_Button;
     private javax.swing.JButton Edit_Shop_Button;
     private javax.swing.JLabel Logout_jLabel;
     private javax.swing.JPanel Logout_jPanel;
     private javax.swing.JLabel Register_Shop_jLabel;
+    private javax.swing.JLabel Report_jLabel;
     private javax.swing.JTextField Shop_Name_TextField;
     private javax.swing.JTextField Shop_No_TextField;
     private javax.swing.JTextField Shop_Owner_TextField;
@@ -602,6 +619,7 @@ public class Register extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 }

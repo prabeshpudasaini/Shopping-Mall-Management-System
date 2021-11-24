@@ -181,7 +181,7 @@
                   <Font name="Tahoma" size="24" style="0"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="E:\Project\4th Sem\Project I\Project\src\main\java\img\login_icon.png"/>
+                  <Image iconType="2" name="E:\Project\4th Sem\Project I\Project-I\Project\src\main\java\img\login_icon.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Login"/>
               </Properties>
@@ -195,7 +195,7 @@
                   <Font name="Tahoma" size="24" style="0"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="E:\Project\4th Sem\Project I\Project\src\main\java\img\back-button.png"/>
+                  <Image iconType="2" name="E:\Project\4th Sem\Project I\Project-I\Project\src\main\java\img\back-button.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Back"/>
               </Properties>
@@ -252,7 +252,7 @@
             <Component class="javax.swing.JLabel" name="jLabel3">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="E:\Project\4th Sem\Project I\Project\src\main\java\img\login.png"/>
+                  <Image iconType="2" name="E:\Project\4th Sem\Project I\Project-I\Project\src\main\java\img\login.png"/>
                 </Property>
               </Properties>
             </Component>

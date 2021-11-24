@@ -13,11 +13,18 @@ import com.google.gson.Gson;
 import com.google.gson.annotations.SerializedName;
 
 import com.stripe.Stripe;
+import com.stripe.exception.StripeException;
 import com.stripe.model.PaymentIntent;
 import com.stripe.param.PaymentIntentCreateParams;
+import com.stripe.param.WebhookEndpointCreateParams;
+import java.sql.Connection;
+import java.sql.Statement;
+import javax.swing.JOptionPane;
 
 public class Server {
   private static Gson gson = new Gson();
+
+ 
 
   static class CreatePayment {
     @SerializedName("items")
@@ -35,17 +42,33 @@ public class Server {
       this.clientSecret = clientSecret;
     }
   }
+  
+  private static int amount;
+  
+     public int getAmount() {
+        return amount;
+    }
+
+    public void setAmount(int amount) {
+        this.amount = amount;
+    }
+  
+
 
   static int calculateOrderAmount(Object[] items) {
     // Replace this constant with a calculation of the order's amount
     // Calculate the order total on the server to prevent
     // users from directly manipulating the amount on the client
-    return 1400;
-//        return  new Purchase_product().finalTotal;
+//    return 140000;
+//       int amount = new Purchase_product().amount;
+      return amount;
     
   }
+  
 
-  public static void main(String[] args) {
+  
+
+  public static void main(String[] args){
     port(4242);
     staticFiles.externalLocation(Paths.get("public").toAbsolutePath().toString());
 
@@ -57,14 +80,35 @@ public class Server {
 
       CreatePayment postBody = gson.fromJson(request.body(), CreatePayment.class);
       PaymentIntentCreateParams createParams = new PaymentIntentCreateParams.Builder()
-      .setCurrency("usd")
+      .setCurrency("npr")
       .setAmount(new Long(calculateOrderAmount(postBody.getItems())))
+//       .setAmount(new Long(new Purchase_product().amount))
       .build();
       // Create a PaymentIntent with the order amount and currency
       PaymentIntent intent = PaymentIntent.create(createParams);
-
+      
       CreatePaymentResponse paymentResponse = new CreatePaymentResponse(intent.getClientSecret());
+      
+//      PaymentIntent paymentIntent = PaymentIntent.retrieve(intent.getId());
+      
+     
+              try {
+            Connection con=DatabaseConnection.getCon();
+            Statement st=con.createStatement();
+            st.execute("INSERT INTO payments(Payment_Id,Payment_Type,Amount) values('"+intent.getId()+"','"+intent.getPaymentMethodTypes()+"','"+intent.getAmount()/100+"')");
+            con.close();
+            
+        } catch (Exception e) {
+             JOptionPane.showMessageDialog(null, e);
+
+        }
+      
+      
       return gson.toJson(paymentResponse);
+      
+
+      
     });
+          
   }
 }

@@ -100,14 +100,9 @@
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Component id="Edit_Product_Button" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
-                                              <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="Back_Button" min="-2" max="-2" attributes="0"/>
-                                                  <Group type="102" attributes="0">
-                                                      <Component id="Delete_Product_Button" min="-2" max="-2" attributes="0"/>
-                                                      <EmptySpace max="-2" attributes="0"/>
-                                                      <Component id="Clear_Button" min="-2" max="-2" attributes="0"/>
-                                                  </Group>
-                                              </Group>
+                                              <Component id="Delete_Product_Button" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="Clear_Button" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                   </Group>
@@ -119,7 +114,7 @@
                               </Group>
                           </Group>
                       </Group>
-                      <EmptySpace pref="28" max="32767" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -147,9 +142,7 @@
                           <Component id="Delete_Product_Button" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
                           <Component id="Clear_Button" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                      <Component id="Back_Button" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="103" max="32767" attributes="0"/>
+                      <EmptySpace pref="162" max="32767" attributes="0"/>
                       <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jScrollPane1" min="-2" pref="200" max="-2" attributes="0"/>
@@ -203,7 +196,7 @@
             <Component class="javax.swing.JButton" name="Delete_Product_Button">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="E:\Project\4th Sem\Project I\Project\src\main\java\img\trash.png"/>
+                  <Image iconType="2" name="E:\Project\4th Sem\Project I\Project-I\Project\src\main\java\img\trash.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Delete"/>
               </Properties>
@@ -214,7 +207,7 @@
             <Component class="javax.swing.JButton" name="Edit_Product_Button">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="E:\Project\4th Sem\Project I\Project\src\main\java\img\edit.png"/>
+                  <Image iconType="2" name="E:\Project\4th Sem\Project I\Project-I\Project\src\main\java\img\edit.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Edit"/>
               </Properties>
@@ -225,7 +218,7 @@
             <Component class="javax.swing.JButton" name="Clear_Button">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="E:\Project\4th Sem\Project I\Project\src\main\java\img\clear.png"/>
+                  <Image iconType="2" name="E:\Project\4th Sem\Project I\Project-I\Project\src\main\java\img\clear.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Clear"/>
               </Properties>
@@ -236,7 +229,7 @@
             <Component class="javax.swing.JButton" name="Add_Product_Button">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="E:\Project\4th Sem\Project I\Project\src\main\java\img\add.png"/>
+                  <Image iconType="2" name="E:\Project\4th Sem\Project I\Project-I\Project\src\main\java\img\add.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Add"/>
               </Properties>
@@ -251,17 +244,6 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="List of current Product"/>
               </Properties>
-            </Component>
-            <Component class="javax.swing.JButton" name="Back_Button">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="E:\Project\4th Sem\Project I\Project\src\main\java\img\back-button.png"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Back"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Back_ButtonActionPerformed"/>
-              </Events>
             </Component>
             <Container class="javax.swing.JScrollPane" name="jScrollPane1">
               <AuxValues>
@@ -377,7 +359,7 @@
             <Component class="javax.swing.JLabel" name="jLabel8">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="E:\Project\4th Sem\Project I\Project\src\main\java\img\shop.png"/>
+                  <Image iconType="2" name="E:\Project\4th Sem\Project I\Project-I\Project\src\main\java\img\shop.png"/>
                 </Property>
               </Properties>
             </Component>
@@ -404,7 +386,7 @@
                 <Component class="javax.swing.JLabel" name="Logout_jLabel">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="2" name="E:\Project\4th Sem\Project I\Project\src\main\java\img\logout.png"/>
+                      <Image iconType="2" name="E:\Project\4th Sem\Project I\Project-I\Project\src\main\java\img\logout.png"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Logout"/>
                     <Property name="alignmentX" type="float" value="0.5"/>

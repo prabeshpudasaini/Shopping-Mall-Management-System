@@ -34,7 +34,7 @@ public class Product extends javax.swing.JFrame {
         
         public void setUsername(String username)
         {
-            this.Shop_Name_jLabel.setText(username);
+//            this.Shop_Name_jLabel.setText(username);
             this.ShopUser = username;
 //            Product_Name_TextField.setText(getUsername());
         }
@@ -90,7 +90,6 @@ public class Product extends javax.swing.JFrame {
         Clear_Button = new javax.swing.JButton();
         Add_Product_Button = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
-        Back_Button = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         Product_table = new javax.swing.JTable();
         jPanel3 = new javax.swing.JPanel();
@@ -129,7 +128,7 @@ public class Product extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
         jLabel5.setText("Product Name:");
 
-        Delete_Product_Button.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project\\src\\main\\java\\img\\trash.png")); // NOI18N
+        Delete_Product_Button.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project-I\\Project\\src\\main\\java\\img\\trash.png")); // NOI18N
         Delete_Product_Button.setText("Delete");
         Delete_Product_Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -137,7 +136,7 @@ public class Product extends javax.swing.JFrame {
             }
         });
 
-        Edit_Product_Button.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project\\src\\main\\java\\img\\edit.png")); // NOI18N
+        Edit_Product_Button.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project-I\\Project\\src\\main\\java\\img\\edit.png")); // NOI18N
         Edit_Product_Button.setText("Edit");
         Edit_Product_Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -145,7 +144,7 @@ public class Product extends javax.swing.JFrame {
             }
         });
 
-        Clear_Button.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project\\src\\main\\java\\img\\clear.png")); // NOI18N
+        Clear_Button.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project-I\\Project\\src\\main\\java\\img\\clear.png")); // NOI18N
         Clear_Button.setText("Clear");
         Clear_Button.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -153,7 +152,7 @@ public class Product extends javax.swing.JFrame {
             }
         });
 
-        Add_Product_Button.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project\\src\\main\\java\\img\\add.png")); // NOI18N
+        Add_Product_Button.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project-I\\Project\\src\\main\\java\\img\\add.png")); // NOI18N
         Add_Product_Button.setText("Add");
         Add_Product_Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -163,14 +162,6 @@ public class Product extends javax.swing.JFrame {
 
         jLabel6.setFont(new java.awt.Font("Trebuchet MS", 0, 18)); // NOI18N
         jLabel6.setText("List of current Product");
-
-        Back_Button.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project\\src\\main\\java\\img\\back-button.png")); // NOI18N
-        Back_Button.setText("Back");
-        Back_Button.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Back_ButtonActionPerformed(evt);
-            }
-        });
 
         Product_table.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -221,17 +212,14 @@ public class Product extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(Edit_Product_Button)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(Back_Button)
-                                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                                .addComponent(Delete_Product_Button)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(Clear_Button))))))
+                                        .addComponent(Delete_Product_Button)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(Clear_Button))))
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addComponent(jLabel5)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(Product_Name_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(28, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -254,9 +242,7 @@ public class Product extends javax.swing.JFrame {
                     .addComponent(Add_Product_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Delete_Product_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Clear_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(34, 34, 34)
-                .addComponent(Back_Button)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 103, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 162, Short.MAX_VALUE)
                 .addComponent(jLabel6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -268,11 +254,11 @@ public class Product extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 28)); // NOI18N
         jLabel7.setText("Shop ");
 
-        jLabel8.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project\\src\\main\\java\\img\\shop.png")); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project-I\\Project\\src\\main\\java\\img\\shop.png")); // NOI18N
 
         Logout_jPanel.setBackground(new java.awt.Color(204, 204, 255));
 
-        Logout_jLabel.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project\\src\\main\\java\\img\\logout.png")); // NOI18N
+        Logout_jLabel.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project-I\\Project\\src\\main\\java\\img\\logout.png")); // NOI18N
         Logout_jLabel.setText("Logout");
         Logout_jLabel.setAlignmentX(0.5F);
         Logout_jLabel.setFocusable(false);
@@ -398,13 +384,6 @@ public class Product extends javax.swing.JFrame {
     }
         
     }
-    private void Back_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Back_ButtonActionPerformed
-        // TODO add your handling code here:
-//        setVisible(false);
-        dispose();
-        new Shop_login().setVisible(true);
-    }//GEN-LAST:event_Back_ButtonActionPerformed
-
     private void Clear_ButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Clear_ButtonMouseClicked
         // TODO add your handling code here:
          
@@ -433,9 +412,8 @@ public class Product extends javax.swing.JFrame {
             
             ResultSet rs=st.executeQuery("SELECT Product_Id,Product_Name,Price,In_Stock FROM products p INNER JOIN shops s ON p.Shop_Id = s.Shop_Id WHERE s.Username = '"+ShopUser+"'");
             
-
-         
-
+            
+            
             Product_table.setModel(DbUtils.resultSetToTableModel(rs));
         }
         catch(Exception e){
@@ -532,7 +510,7 @@ public class Product extends javax.swing.JFrame {
             DisplayProduct();
             
         } catch (Exception e) {
-             JOptionPane.showMessageDialog(null, e);
+             JOptionPane.showMessageDialog(null, "Value must be integer");
         }
         }
     }//GEN-LAST:event_Edit_Product_ButtonActionPerformed
@@ -590,7 +568,6 @@ public class Product extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Add_Product_Button;
-    private javax.swing.JButton Back_Button;
     private javax.swing.JButton Clear_Button;
     private javax.swing.JButton Delete_Product_Button;
     private javax.swing.JButton Edit_Product_Button;

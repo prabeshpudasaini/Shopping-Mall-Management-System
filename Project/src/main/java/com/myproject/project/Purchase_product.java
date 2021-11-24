@@ -25,8 +25,10 @@ import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 import net.proteanit.sql.DbUtils;
 import java.util.Date;
+import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
 
 /**
  *
@@ -35,6 +37,12 @@ import java.util.logging.Logger;
 public class Purchase_product extends javax.swing.JFrame {
     
     public int finalTotal = 0;
+    
+    public int amount = 0;
+    
+    public int zero1 = 0;
+    public int zero2 = 0;
+
 
     /**
      * Creates new form Purchase_product
@@ -117,6 +125,7 @@ public class Purchase_product extends javax.swing.JFrame {
 
         jLabel2.setText("Product Name:");
 
+        Product_Name_TextField.setEditable(false);
         Product_Name_TextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Product_Name_TextFieldActionPerformed(evt);
@@ -125,7 +134,7 @@ public class Purchase_product extends javax.swing.JFrame {
 
         jLabel3.setText("Quantity:");
 
-        Add_To_Cart_Button.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project\\src\\main\\java\\img\\shopping-cart.png")); // NOI18N
+        Add_To_Cart_Button.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project-I\\Project\\src\\main\\java\\img\\shopping-cart.png")); // NOI18N
         Add_To_Cart_Button.setText("Add to Cart");
         Add_To_Cart_Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -133,7 +142,7 @@ public class Purchase_product extends javax.swing.JFrame {
             }
         });
 
-        Clear_Button.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project\\src\\main\\java\\img\\clear.png")); // NOI18N
+        Clear_Button.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project-I\\Project\\src\\main\\java\\img\\clear.png")); // NOI18N
         Clear_Button.setText("Clear");
         Clear_Button.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -150,7 +159,7 @@ public class Purchase_product extends javax.swing.JFrame {
 
         jLabel5.setText("Shopping Cart");
 
-        Card_Payment_Button.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project\\src\\main\\java\\img\\checkout.png")); // NOI18N
+        Card_Payment_Button.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project-I\\Project\\src\\main\\java\\img\\credit-card.png")); // NOI18N
         Card_Payment_Button.setText("Pay");
         Card_Payment_Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -176,8 +185,8 @@ public class Purchase_product extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(Product_table);
 
-        Back_Button.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project\\src\\main\\java\\img\\back-button.png")); // NOI18N
-        Back_Button.setText("Back");
+        Back_Button.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project-I\\Project\\src\\main\\java\\img\\logout.png")); // NOI18N
+        Back_Button.setText("Logout");
         Back_Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Back_ButtonActionPerformed(evt);
@@ -232,6 +241,7 @@ public class Purchase_product extends javax.swing.JFrame {
 
         jLabel11.setText("Pay By Card");
 
+        Cash_Payment_jButton.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project-I\\Project\\src\\main\\java\\img\\banknotes.png")); // NOI18N
         Cash_Payment_jButton.setText("Pay");
         Cash_Payment_jButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -239,6 +249,7 @@ public class Purchase_product extends javax.swing.JFrame {
             }
         });
 
+        Delete_From_Cart_jButton.setIcon(new javax.swing.ImageIcon("E:\\Project\\4th Sem\\Project I\\Project-I\\Project\\src\\main\\java\\img\\trash.png")); // NOI18N
         Delete_From_Cart_jButton.setText("Delete From Cart");
         Delete_From_Cart_jButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -251,9 +262,9 @@ public class Purchase_product extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGap(75, 75, 75)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(75, 75, 75)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2)
                             .addComponent(jLabel3)
@@ -266,14 +277,12 @@ public class Purchase_product extends javax.swing.JFrame {
                                 .addComponent(Clear_Button))
                             .addComponent(Product_Name_TextField)
                             .addComponent(Quantity_TextField)
-                            .addComponent(Product_Price_TextField))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(Product_Price_TextField)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(92, 92, 92)
                         .addComponent(Back_Button)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(Delete_From_Cart_jButton)
-                        .addGap(101, 101, 101)))
+                        .addComponent(Delete_From_Cart_jButton)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(46, 46, 46))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
@@ -323,7 +332,7 @@ public class Purchase_product extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(35, 35, 35)
                                 .addComponent(Card_Payment_Button)))
-                        .addContainerGap(99, Short.MAX_VALUE))
+                        .addContainerGap(100, Short.MAX_VALUE))
                     .addComponent(jSeparator1)))
         );
         jPanel1Layout.setVerticalGroup(
@@ -335,9 +344,7 @@ public class Purchase_product extends javax.swing.JFrame {
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel2)
@@ -354,14 +361,11 @@ public class Purchase_product extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(Add_To_Cart_Button)
                             .addComponent(Clear_Button))
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(34, 34, 34)
-                                .addComponent(Back_Button))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(Delete_From_Cart_jButton)
-                                .addGap(50, 50, 50)))))
+                        .addGap(42, 42, 42)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Delete_From_Cart_jButton)
+                            .addComponent(Back_Button))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
                 .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -470,7 +474,10 @@ public class Purchase_product extends javax.swing.JFrame {
     private void Card_Payment_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Card_Payment_ButtonActionPerformed
         // TODO add your handling code here:
         
-          Server.main(null);
+            amount = Integer.parseInt(Total_Amount_TextField.getText()+String.valueOf(zero1)+String.valueOf(zero2));
+            new Server().setAmount(amount);
+            
+            Server.main(null);
            
            Desktop desk = Desktop.getDesktop();
         try {
@@ -480,6 +487,67 @@ public class Purchase_product extends javax.swing.JFrame {
         } catch (IOException ex) {
             Logger.getLogger(Purchase_product.class.getName()).log(Level.SEVERE, null, ex);
         }
+        
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
+        Date d = new Date();
+        String date=dateFormat.format(d);
+
+        
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH-mm-ss");
+        LocalDateTime now = LocalDateTime.now();
+        String time = dtf.format(now);
+        
+        String product_name =Product_Name_TextField.getText();
+        String quantity = Quantity_TextField.getText();
+        String path = "C:\\Users\\user\\Desktop\\New folder\\Card Payments\\";
+        com.itextpdf.text.Document doc = new com.itextpdf.text.Document();
+        try 
+        {
+            PdfWriter.getInstance(doc, new FileOutputStream(path+""+date+"_"+time+".pdf"));
+            doc.open();
+            Paragraph paragraph1 = new Paragraph("                                                  Orchid BCA Shopping Mall \n                                                     Contact no: 123456789");
+            doc.add(paragraph1);
+            Paragraph paragraph2 = new Paragraph("\nDate And Time: "+date+" "+time+"\n\n");
+            doc.add(paragraph2);
+            
+            PdfPTable tb1 = new PdfPTable(4);
+            tb1.addCell("Product_Name");
+            tb1.addCell("Quantity");
+            tb1.addCell("Rate");
+            tb1.addCell("Total");
+            
+            for(int i=0;i<Cart_table.getRowCount();i++)
+            {
+                String n = Cart_table.getValueAt(i, 0).toString();
+                String q = Cart_table.getValueAt(i, 1).toString();
+                String r = Cart_table.getValueAt(i, 2).toString();
+                String t = Cart_table.getValueAt(i, 3).toString();
+                tb1.addCell(n);
+                tb1.addCell(q);
+                tb1.addCell(r);
+                tb1.addCell(t);
+            }
+            doc.add(tb1);
+
+            
+            Paragraph paragraph3 = new Paragraph("\n\nPaid By Card\nTotal: "+Total_Amount_TextField.getText()+"\n\nThank You For Visiting");
+            doc.add(paragraph3);
+            JOptionPane.showMessageDialog(null, "BIll Generated");
+            this.dispose();
+            new Purchase_product().setVisible(true);
+         } 
+        catch (Exception e)
+        {
+           JOptionPane.showMessageDialog(null, e);
+            
+        }
+        doc.close();
+        
+//        
+//        this.dispose();
+//        new Purchase_product().setVisible(true);
+       
+
             
         
     }//GEN-LAST:event_Card_Payment_ButtonActionPerformed
@@ -501,19 +569,30 @@ public class Purchase_product extends javax.swing.JFrame {
 
     private void Add_To_Cart_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Add_To_Cart_ButtonActionPerformed
         // TODO add your handling code here:
+        
+        if(Product_Name_TextField.getText().isEmpty()||Product_Price_TextField.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null, "Missing Data");
+        }
+        else{  
         String productname=Product_Name_TextField.getText();
+        DefaultTableModel model = (DefaultTableModel)Cart_table.getModel();
+        
+        int Myindex=Product_table.getSelectedRow();
+
+        
+        
         
         int quantity = Integer.parseInt(Quantity_TextField.getText());
         double rate = Double.parseDouble(Product_Price_TextField.getText());
         int total = (int) (quantity*rate);
 
         
-        DefaultTableModel model = (DefaultTableModel)Cart_table.getModel();
+        
         model.addRow(new Object[]{productname,quantity,rate,total});
         finalTotal=finalTotal+total;
         String finalTotal1 = String.valueOf(finalTotal);
         Total_Amount_TextField.setText(finalTotal1);
-        
+                }
     }//GEN-LAST:event_Add_To_Cart_ButtonActionPerformed
 
     private void Product_Price_TextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Product_Price_TextFieldActionPerformed
@@ -522,75 +601,96 @@ public class Purchase_product extends javax.swing.JFrame {
 
     private void Cash_Payment_jButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cash_Payment_jButtonActionPerformed
         // TODO add your handling code here:
-        //        SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
-//        Date d = new Date();
-//        String date=dateFormat.format(d);
-//
-//        
-//        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH-mm-ss");
-//        LocalDateTime now = LocalDateTime.now();
-//        String time = dtf.format(now);
-//        
-//        String product_name =Product_Name_TextField.getText();
-//        String quantity = Quantity_TextField.getText();
-//        String path = "C:\\Users\\user\\Desktop\\New folder\\";
-//        com.itextpdf.text.Document doc = new com.itextpdf.text.Document();
-//        try 
-//        {
-//            PdfWriter.getInstance(doc, new FileOutputStream(path+""+date+"_"+time+".pdf"));
-//            doc.open();
-//            Paragraph paragraph1 = new Paragraph("Shopping Mall Mnagement System \n Contact no: 123456789");
-//            doc.add(paragraph1);
-//            Paragraph paragraph2 = new Paragraph("\nDate And Time: "+date+" "+time+"\n\n");
-//            doc.add(paragraph2);
-//            
-//            PdfPTable tb1 = new PdfPTable(4);
-//            tb1.addCell("Product_Name");
-//            tb1.addCell("Quantity");
-//            tb1.addCell("Rate");
-//            tb1.addCell("Total");
-//            
-//            for(int i=0;i<Cart_table.getRowCount();i++)
-//            {
-//                String n = Cart_table.getValueAt(i, 0).toString();
-//                String q = Cart_table.getValueAt(i, 1).toString();
-//                String r = Cart_table.getValueAt(i, 2).toString();
-//                String t = Cart_table.getValueAt(i, 3).toString();
-//                tb1.addCell(n);
-//                tb1.addCell(q);
-//                tb1.addCell(r);
-//                tb1.addCell(t);
-//            }
-//            doc.add(tb1);
-//
-//            
-//            Paragraph paragraph3 = new Paragraph("\n\nTotal: "+Total_Amount_TextField.getText()+"\nPaid Amount: "+Paid_Amount_TextField.getText()+"\nReturn Amount: "+Return_Amount_TextField.getText()+"\n\nThank You For Visiting");
-//            doc.add(paragraph3);
-//            JOptionPane.showMessageDialog(null, "BIll Generated");
-//            setVisible(true);
-//            new Purchase_product().setVisible(true);
-//         } 
-//        catch (Exception e)
-//        {
-//           JOptionPane.showMessageDialog(null, e);
-//            
-//        }
-//        doc.close();
+         Random rand = new Random();
+      int upperbound = 999999999;
+      int payment_id = rand.nextInt(upperbound); 
+      String PaymentType = "Cash";
+      
+        try {
+            Connection con=DatabaseConnection.getCon();
+            Statement st=con.createStatement();
+            st.execute("INSERT INTO payments(Payment_Id,Payment_Type,Amount) values('"+payment_id+"','"+PaymentType+"','"+Total_Amount_TextField.getText()+"')");
+            con.close();
+            
+        } catch (Exception e) {
+             JOptionPane.showMessageDialog(null, e);
+
+        }
+        
+        
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
+        Date d = new Date();
+        String date=dateFormat.format(d);
+
+        
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH-mm-ss");
+        LocalDateTime now = LocalDateTime.now();
+        String time = dtf.format(now);
+        
+        String product_name =Product_Name_TextField.getText();
+        String quantity = Quantity_TextField.getText();
+        String path = "C:\\Users\\user\\Desktop\\New folder\\Cash Payments\\";
+        com.itextpdf.text.Document doc = new com.itextpdf.text.Document();
+        try 
+        {
+            PdfWriter.getInstance(doc, new FileOutputStream(path+""+date+"_"+time+".pdf"));
+            doc.open();
+            Paragraph paragraph1 = new Paragraph("                                                  Orchid BCA Shopping Mall \n                                                     Contact no: 123456789");
+            doc.add(paragraph1);
+            Paragraph paragraph2 = new Paragraph("\nDate And Time: "+date+" "+time+"\n\n");
+            doc.add(paragraph2);
+            
+            PdfPTable tb1 = new PdfPTable(4);
+            tb1.addCell("Product_Name");
+            tb1.addCell("Quantity");
+            tb1.addCell("Rate");
+            tb1.addCell("Total");
+            
+            for(int i=0;i<Cart_table.getRowCount();i++)
+            {
+                String n = Cart_table.getValueAt(i, 0).toString();
+                String q = Cart_table.getValueAt(i, 1).toString();
+                String r = Cart_table.getValueAt(i, 2).toString();
+                String t = Cart_table.getValueAt(i, 3).toString();
+                tb1.addCell(n);
+                tb1.addCell(q);
+                tb1.addCell(r);
+                tb1.addCell(t);
+            }
+            doc.add(tb1);
+
+            
+            Paragraph paragraph3 = new Paragraph("\n\nPaid By Cash\nTotal: "+Total_Amount_TextField.getText()+"\nPaid Amount: "+Paid_Amount_TextField.getText()+"\nReturn Amount: "+Return_Amount_TextField.getText()+"\n\nThank You For Visiting");
+            doc.add(paragraph3);
+            JOptionPane.showMessageDialog(null, "BIll Generated");
+            this.dispose();
+            new Purchase_product().setVisible(true);
+         } 
+        catch (Exception e)
+        {
+           JOptionPane.showMessageDialog(null, e);
+            
+        }
+        doc.close();
         
     }//GEN-LAST:event_Cash_Payment_jButtonActionPerformed
 
     private void Delete_From_Cart_jButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Delete_From_Cart_jButtonActionPerformed
         // TODO add your handling code here:
+        String productname=Product_Name_TextField.getText();
         DefaultTableModel model = (DefaultTableModel)Cart_table.getModel();
         int Myindex=Cart_table.getSelectedRow();
         
+        
+        
+ 
+        int quantity = Integer.parseInt(Quantity_TextField.getText());
         int total = Integer.parseInt(model.getValueAt(Myindex, 3).toString());
         finalTotal = Integer.parseInt(Total_Amount_TextField.getText());
         
       finalTotal=finalTotal-total;
       String newfinalTotal1 = String.valueOf(finalTotal);
       Total_Amount_TextField.setText(newfinalTotal1);
-      
       model.removeRow(Myindex);
 
     }//GEN-LAST:event_Delete_From_Cart_jButtonActionPerformed

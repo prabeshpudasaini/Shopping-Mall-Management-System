@@ -60,9 +60,9 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                      <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -79,16 +79,14 @@
                               <Component id="Quantity_TextField" max="32767" attributes="0"/>
                               <Component id="Product_Price_TextField" alignment="1" max="32767" attributes="0"/>
                           </Group>
-                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="92" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
                           <Component id="Back_Button" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                           <Component id="Delete_From_Cart_jButton" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="101" max="-2" attributes="0"/>
                       </Group>
                   </Group>
+                  <EmptySpace pref="58" max="32767" attributes="0"/>
                   <Component id="jScrollPane1" min="-2" pref="500" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
               </Group>
@@ -153,7 +151,7 @@
                                   <Component id="Card_Payment_Button" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace pref="99" max="32767" attributes="0"/>
+                          <EmptySpace pref="100" max="32767" attributes="0"/>
                       </Group>
                       <Component id="jSeparator1" alignment="0" max="32767" attributes="0"/>
                   </Group>
@@ -169,10 +167,7 @@
                   <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="jScrollPane1" min="-2" pref="250" max="-2" attributes="0"/>
-                          <EmptySpace pref="32" max="32767" attributes="0"/>
-                      </Group>
+                      <Component id="jScrollPane1" alignment="0" min="-2" pref="250" max="-2" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -193,19 +188,14 @@
                               <Component id="Add_To_Cart_Button" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="Clear_Button" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                                  <Component id="Back_Button" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="Delete_From_Cart_jButton" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
-                              </Group>
+                          <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="Delete_From_Cart_jButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="Back_Button" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
+                  <EmptySpace pref="36" max="32767" attributes="0"/>
                   <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
@@ -262,6 +252,9 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="Product_Name_TextField">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+          </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Product_Name_TextFieldActionPerformed"/>
           </Events>
@@ -276,7 +269,7 @@
         <Component class="javax.swing.JButton" name="Add_To_Cart_Button">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="E:\Project\4th Sem\Project I\Project\src\main\java\img\shopping-cart.png"/>
+              <Image iconType="2" name="E:\Project\4th Sem\Project I\Project-I\Project\src\main\java\img\shopping-cart.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Add to Cart"/>
           </Properties>
@@ -287,7 +280,7 @@
         <Component class="javax.swing.JButton" name="Clear_Button">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="E:\Project\4th Sem\Project I\Project\src\main\java\img\clear.png"/>
+              <Image iconType="2" name="E:\Project\4th Sem\Project I\Project-I\Project\src\main\java\img\clear.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Clear"/>
           </Properties>
@@ -309,7 +302,7 @@
         <Component class="javax.swing.JButton" name="Card_Payment_Button">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="E:\Project\4th Sem\Project I\Project\src\main\java\img\checkout.png"/>
+              <Image iconType="2" name="E:\Project\4th Sem\Project I\Project-I\Project\src\main\java\img\credit-card.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Pay"/>
           </Properties>
@@ -371,9 +364,9 @@
         <Component class="javax.swing.JButton" name="Back_Button">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="E:\Project\4th Sem\Project I\Project\src\main\java\img\back-button.png"/>
+              <Image iconType="2" name="E:\Project\4th Sem\Project I\Project-I\Project\src\main\java\img\logout.png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Back"/>
+            <Property name="text" type="java.lang.String" value="Logout"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Back_ButtonActionPerformed"/>
@@ -489,6 +482,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="Cash_Payment_jButton">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="2" name="E:\Project\4th Sem\Project I\Project-I\Project\src\main\java\img\banknotes.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Pay"/>
           </Properties>
           <Events>
@@ -497,6 +493,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="Delete_From_Cart_jButton">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="2" name="E:\Project\4th Sem\Project I\Project-I\Project\src\main\java\img\trash.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Delete From Cart"/>
           </Properties>
           <Events>

@@ -86,7 +86,7 @@
                               <Component id="shop_username_TextField" min="-2" pref="300" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="172" max="32767" attributes="0"/>
+                      <EmptySpace pref="129" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -145,7 +145,7 @@
                   <Font name="Tahoma" size="24" style="0"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="E:\Project\4th Sem\Project I\Project\src\main\java\img\login_icon.png"/>
+                  <Image iconType="2" name="E:\Project\4th Sem\Project I\Project-I\Project\src\main\java\img\login_icon.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Login"/>
               </Properties>
@@ -159,7 +159,7 @@
                   <Font name="Tahoma" size="24" style="0"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="E:\Project\4th Sem\Project I\Project\src\main\java\img\back-button.png"/>
+                  <Image iconType="2" name="E:\Project\4th Sem\Project I\Project-I\Project\src\main\java\img\back-button.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Back"/>
               </Properties>
@@ -213,7 +213,7 @@
                       <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
                       <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="315" max="32767" attributes="0"/>
+                      <EmptySpace pref="155" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -230,7 +230,7 @@
             <Component class="javax.swing.JLabel" name="jLabel4">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="E:\Project\4th Sem\Project I\Project\src\main\java\img\login.png"/>
+                  <Image iconType="2" name="E:\Project\4th Sem\Project I\Project-I\Project\src\main\java\img\login.png"/>
                 </Property>
               </Properties>
             </Component>
